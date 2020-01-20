@@ -1,0 +1,53 @@
+body {
+  min-height: 300vh;
+}
+
+.static {
+  width: 150px;
+  height: 150px;
+  background-color: tomato;
+  position: static;
+}
+
+.relative {
+  width: 150px;
+  height: 150px;
+  background-color: darkgoldenrod;
+  position: relative;
+  top: 15px;
+  left: 15px;
+}
+
+.fixed {
+  width: 150px;
+  height: 150px;
+  background-color: orange;
+  position: fixed;
+  right: 10px;
+  top: 10px;
+}
+
+.absolute {
+  width: 300px;
+  height: 300px;
+  background-color: lightsalmon;
+  /* position: relative; */
+}
+
+.absolute > .absolute-child {
+  height: 75px;
+  width: 75px;
+  background-color: teal;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+.sticky {
+  width: 50px;
+  height: 50px;
+  background-color: hotpink;
+  position: sticky;
+  top: 10px;
+}
